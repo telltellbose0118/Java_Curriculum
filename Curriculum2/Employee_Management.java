@@ -42,10 +42,6 @@ public class Employee_Management extends JFrame{
                 g2d.drawString("F",padding,-85);
                 g2d.setFont((g.getFont().deriveFont(Font.ITALIC , 50f)));
                 g2d.drawString(" orce",padding + interval,-85);
-//                GradientPaint mask =  new GradientPaint(0,0,new Color(1.0f,1.0f,1.0f,0.5f),0,100,new Color(1.0f,1.0f,1.0f,0.0f));
-//                g2d.setPaint(mask);
-//                g2d.setComposite(AlphaComposite.DstIn);
-//                g2d.fillRect(padding, -85, interval + space,50);
                 g2d.scale(1.0,-1.0);
 
                 g2d.setColor(Color.RED.darker());

@@ -10,12 +10,14 @@ import java.util.List;
  */
 public class Employee_Management extends JFrame{
     private JComponent component;
+    private JComponent progress;
     private Image[] images;
     private Image[] icons;
     private int padding = 60;
     private int space = 120;
     private int interval = 40;
     private final EmployeeList employeeList = new EmployeeList();
+
     Employee_Management(){
         setDefaultCloseOperation(3);
         setSize(new Dimension(500,300));
@@ -64,7 +66,11 @@ public class Employee_Management extends JFrame{
                 g2d.drawRect(0,225,496,10);
             }
         };
+        progress = new JComponent(){
+
+        }
         add(component);
+        add(progress);
         setVisible(true);
     }
 
